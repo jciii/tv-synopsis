@@ -1,0 +1,16 @@
+html 
+ include partials/head
+ 
+body
+h2#season='Seasons' + ' '+seasonNum.number
+for episode in seasonNum.episodes
+  table(border='1' align='center')
+    th#num No.
+    th Title
+    th Director
+    tr
+    td#num=episode.number
+    td=episode.title
+    td=episode.director
+    tr
+        td#synop(colspan='3')=episode.synopsis

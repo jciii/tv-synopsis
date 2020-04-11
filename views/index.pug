@@ -1,0 +1,17 @@
+html
+ include partials/head
+body
+  h2 Developed By
+ul 
+ for directors in showData.developedBy
+   li=directors
+ h2 Starring
+ul
+  for stars in showData.starring
+    li=stars
+
+  h2 Seasons
+ul
+  for seasons in showData.seasons
+    li 
+      a(href=`/seasons/${seasons.number}`)='Season'+ ' '+ seasons.number
