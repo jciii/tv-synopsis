@@ -22,7 +22,5 @@ app.all('*', (request, response) => {
 })
 
 app.listen(7142, () => {
-  // eslint-disable-next-line no-console
-  console.log('listening on 7142')
 })
 
